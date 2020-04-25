@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.29709.97
+VisualStudioVersion = 16.0.29403.142
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "State Design Pattern", "State Design Pattern\State Design Pattern.csproj", "{2C518DBD-B24B-4C62-AC55-6C0D55FF8BD2}"
 EndProject
@@ -20,6 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {8BDEF1AC-B2E8-4F5E-B1A5-176421FCBA68}
+		SolutionGuid = {756A37CE-0AB5-4BCE-8FEE-07072C528963}
 	EndGlobalSection
 EndGlobal
