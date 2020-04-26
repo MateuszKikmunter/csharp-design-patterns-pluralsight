@@ -6,22 +6,26 @@ namespace State_Design_Pattern.Logic
     {
         public override void Cancel(BookingContext booking)
         {
-            throw new NotImplementedException();
+            booking.TransitionToState(new ClosedState("Booking Cancelled"));
         }
 
         public override void DatePassed(BookingContext booking)
         {
-            throw new NotImplementedException();
+            booking.TransitionToState(new ClosedState("Booking expired"));
         }
 
         public override void EnterDetails(BookingContext booking, string attendee, int ticketCount)
         {
-            throw new NotImplementedException();
+            booking.Attendee = attendee;
+            booking.TicketCount = ticketCount;
+            booking.TransitionToState(new PendingState());
         }
 
         public override void EnterState(BookingContext booking)
         {
-            throw new NotImplementedException();
+            booking.BookingID = new Random().Next();
+            booking.ShowState("New");
+            booking.View.ShowEntryPage();
         }
     }
 }
