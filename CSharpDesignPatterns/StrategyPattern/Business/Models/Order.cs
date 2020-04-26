@@ -1,4 +1,5 @@
 ﻿using StrategyPattern.Business.Models.Enums;
+using StrategyPattern.Business.Models.Strategies;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -20,32 +21,16 @@ namespace StrategyPattern.Business.Models
 
         public ShippingDetails ShippingDetails { get; set; }
 
+        public ISalesTaxStrategy SalesTaxStrategy { get; set; }
+
         public decimal GetTax()
         {
-            var destination = ShippingDetails.DestinationCountry.ToLowerInvariant();
-
-            if (destination == "sweden")
+            if(SalesTaxStrategy == null)
             {
-                if (destination == ShippingDetails.OriginCountry.ToLowerInvariant())
-                {
-                    return TotalPrice * 0.25m;
-                }
-
                 return 0;
             }
 
-            if (destination == "us")
-            {
-                switch (ShippingDetails.DestinationState.ToLowerInvariant())
-                {
-                    case "la": return TotalPrice * 0.095m;
-                    case "ny": return TotalPrice * 0.04m;
-                    case "nyc": return TotalPrice * 0.045m;
-                    default: return 0m;
-                }
-            }
-
-            return 0m;
+            return SalesTaxStrategy.GetTaxFor(this);
         }
     }
 }
