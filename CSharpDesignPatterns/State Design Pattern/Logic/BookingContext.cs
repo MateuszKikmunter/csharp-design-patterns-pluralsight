@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using State_Design_Pattern.UI;
+﻿using State_Design_Pattern.UI;
 
 namespace State_Design_Pattern.Logic
 {
