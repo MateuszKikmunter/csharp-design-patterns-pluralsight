@@ -12,3 +12,5 @@
 /CSharpDesignPatterns/.vs/CSharpDesignPatterns/v16/Server/sqlite3
 /CSharpDesignPatterns/State Design Pattern/obj/Debug
 /CSharpDesignPatterns/State Design Pattern/bin/Debug
+/CSharpDesignPatterns/StrategyPattern/obj
+/CSharpDesignPatterns/StrategyPattern/bin/Debug/netcoreapp3.1
