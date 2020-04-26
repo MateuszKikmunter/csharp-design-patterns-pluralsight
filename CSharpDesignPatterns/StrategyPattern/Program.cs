@@ -1,4 +1,6 @@
-﻿using System;
+﻿using StrategyPattern.Business.Models;
+using StrategyPattern.Business.Models.Enums;
+using System;
 
 namespace StrategyPattern
 {
