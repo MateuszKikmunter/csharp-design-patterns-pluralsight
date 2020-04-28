@@ -11,7 +11,7 @@ namespace StrategyPattern.Business.Models.Strategies.Concrete
             using (var client = new HttpClient())
             {
                 //TODO: Implement DHL shipping integration
-                Console.WriteLine("Order is shipped with DHL");
+                Console.WriteLine("Order is shipped with Fedex");
             }
         }
     }
