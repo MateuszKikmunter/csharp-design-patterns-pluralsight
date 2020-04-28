@@ -1,4 +1,4 @@
-﻿namespace StrategyPattern.Business.Models.Strategies
+﻿namespace StrategyPattern.Business.Models.Strategies.Abstract
 {
     public interface  ISalesTaxStrategy
     {

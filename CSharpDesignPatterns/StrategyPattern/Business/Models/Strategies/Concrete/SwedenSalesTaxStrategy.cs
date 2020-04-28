@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using StrategyPattern.Business.Models.Strategies.Abstract;
+using System.Collections.Generic;
 
 namespace StrategyPattern.Business.Models.Strategies.Concrete
 {

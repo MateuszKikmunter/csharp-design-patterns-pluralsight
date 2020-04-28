@@ -1,4 +1,6 @@
-﻿namespace StrategyPattern.Business.Models.Strategies.Concrete
+﻿using StrategyPattern.Business.Models.Strategies.Abstract;
+
+namespace StrategyPattern.Business.Models.Strategies.Concrete
 {
     public class USAStateSalesStrategy : ISalesTaxStrategy
     {

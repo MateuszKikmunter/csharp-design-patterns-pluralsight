@@ -27,6 +27,8 @@ namespace StrategyPattern.Business.Models
 
         public IInvoiceStrategy InvoiceStrategy { get; set; }
 
+        public IShippingStrategy ShippingStrategy { get; set; }
+
         public decimal GetTax()
         {
             if (SalesTaxStrategy == null)
@@ -49,6 +51,8 @@ namespace StrategyPattern.Business.Models
             {
                 throw new Exception("Unable to finalize order");
             }
+
+            ShippingStrategy.Ship(this);
         }
     }
 }
