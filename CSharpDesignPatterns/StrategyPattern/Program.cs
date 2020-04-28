@@ -22,7 +22,16 @@ namespace StrategyPattern
             order.LineItems.Add(new Item("CONSULTING", "Building a website", 100m, ItemType.Service), 1);
 
             order.SalesTaxStrategy = new SwedenSalesTaxStrategy();
+
+            order.SelectedPayments.Add(new Payment()
+            {
+                PaymentProvider = PaymentProvider.Invoice
+            });
+
             Console.WriteLine(order.GetTax());
+
+            order.InvoiceStrategy = new FileInvoiceStrategy();
+            order.FinalizeOrder();
         }
     }
 }
