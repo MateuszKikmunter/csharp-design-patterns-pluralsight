@@ -4,7 +4,7 @@ using System.Net.Mail;
 
 namespace StrategyPattern.Business.Models.Strategies.Concrete
 {
-    public class EmailStrategy : InvoiceStrategy
+    public class EmailInvoiceStrategy : InvoiceStrategy
     {
         public override void Generate(Order order)
         {
