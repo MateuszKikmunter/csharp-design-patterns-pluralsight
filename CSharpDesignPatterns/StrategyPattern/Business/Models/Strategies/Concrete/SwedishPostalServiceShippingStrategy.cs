@@ -10,7 +10,7 @@ namespace StrategyPattern.Business.Models.Strategies.Concrete
         {
             using (var client = new HttpClient())
             {
-                //TODO: Implement DHL shipping integration
+                //TODO: Implement Swedish Postal Services shipping integration
                 Console.WriteLine("Order is shipped with Swedish Postal Services");
             }
         }

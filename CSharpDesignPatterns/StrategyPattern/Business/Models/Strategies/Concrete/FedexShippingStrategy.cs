@@ -10,7 +10,7 @@ namespace StrategyPattern.Business.Models.Strategies.Concrete
         {
             using (var client = new HttpClient())
             {
-                //TODO: Implement DHL shipping integration
+                //TODO: Implement Fedex shipping integration
                 Console.WriteLine("Order is shipped with Fedex");
             }
         }
