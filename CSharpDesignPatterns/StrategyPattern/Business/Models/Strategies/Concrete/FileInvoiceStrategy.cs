@@ -1,4 +1,6 @@
 ﻿using StrategyPattern.Business.Models.Strategies.Abstract;
+using System;
+using System.IO;
 
 namespace StrategyPattern.Business.Models.Strategies.Concrete
 {
@@ -6,7 +8,11 @@ namespace StrategyPattern.Business.Models.Strategies.Concrete
     {
         public override void Generate(Order order)
         {
-            throw new System.NotImplementedException();
+            using (var stream = new StreamWriter($"invoice_{ Guid.NewGuid() }.txt"))
+            {
+                stream.Write(GenerateTextInvoice(order));
+                stream.Flush();
+            }
         }
     }
 }
