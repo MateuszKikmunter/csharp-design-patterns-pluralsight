@@ -23,14 +23,15 @@ namespace StrategyPattern.Business.Models
 
         public ISalesTaxStrategy SalesTaxStrategy { get; set; }
 
-        public decimal GetTax()
+        public decimal GetTax( ISalesTaxStrategy salesTaxStrategy)
         {
-            if(SalesTaxStrategy == null)
+            var strategy = salesTaxStrategy ?? SalesTaxStrategy;
+            if(strategy == null)
             {
                 return 0;
             }
 
-            return SalesTaxStrategy.GetTaxFor(this);
+            return strategy.GetTaxFor(this);
         }
     }
 }
