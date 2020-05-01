@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MediatorPattern", "Mediator
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleMediatorDemo", "ConsoleMediatorDemo\ConsoleMediatorDemo.csproj", "{DE87F493-F1D0-488B-988C-16569884BBD2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarkerPositions", "MarkerPositions\MarkerPositions.csproj", "{B45A6471-8AE6-4161-83BC-CCA1BC40F185}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,12 +31,17 @@ Global
 		{DE87F493-F1D0-488B-988C-16569884BBD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE87F493-F1D0-488B-988C-16569884BBD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE87F493-F1D0-488B-988C-16569884BBD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B45A6471-8AE6-4161-83BC-CCA1BC40F185}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B45A6471-8AE6-4161-83BC-CCA1BC40F185}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B45A6471-8AE6-4161-83BC-CCA1BC40F185}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B45A6471-8AE6-4161-83BC-CCA1BC40F185}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{DE87F493-F1D0-488B-988C-16569884BBD2} = {14D8D712-4D11-4047-B9E9-864077256050}
+		{B45A6471-8AE6-4161-83BC-CCA1BC40F185} = {14D8D712-4D11-4047-B9E9-864077256050}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8BDEF1AC-B2E8-4F5E-B1A5-176421FCBA68}
