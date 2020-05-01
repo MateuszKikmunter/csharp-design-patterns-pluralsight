@@ -7,11 +7,8 @@ namespace ConsoleMediatorDemo
         static void Main(string[] args)
         {
             var mediator = new ConcreteMediator();
-            var c1 = new ConcreteColleague();
-            var c2 = new SecondConreteColleage();
-
-            mediator.Register(c1);
-            mediator.Register(c2);
+            var c1 = mediator.CreateColleague<ConcreteColleague>();
+            var c2 = mediator.CreateColleague<SecondConreteColleage>();
 
             c1.Send("hello from colleague 1");
             c2.Send("hello from colleague 2");
