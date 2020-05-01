@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StrategyPattern", "Strategy
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MediatorPattern", "MediatorPattern", "{14D8D712-4D11-4047-B9E9-864077256050}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleMediatorDemo", "ConsoleMediatorDemo\ConsoleMediatorDemo.csproj", "{DE87F493-F1D0-488B-988C-16569884BBD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleMediatorDemo", "ConsoleMediatorDemo\ConsoleMediatorDemo.csproj", "{DE87F493-F1D0-488B-988C-16569884BBD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarkerPositions", "MarkerPositions\MarkerPositions.csproj", "{B45A6471-8AE6-4161-83BC-CCA1BC40F185}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarkerPositions", "MarkerPositions\MarkerPositions.csproj", "{B45A6471-8AE6-4161-83BC-CCA1BC40F185}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatRDemo", "MediatRDemo\MediatRDemo.csproj", "{0915F1F8-679A-4182-8481-51B954F0DA96}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{B45A6471-8AE6-4161-83BC-CCA1BC40F185}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B45A6471-8AE6-4161-83BC-CCA1BC40F185}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B45A6471-8AE6-4161-83BC-CCA1BC40F185}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0915F1F8-679A-4182-8481-51B954F0DA96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0915F1F8-679A-4182-8481-51B954F0DA96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0915F1F8-679A-4182-8481-51B954F0DA96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0915F1F8-679A-4182-8481-51B954F0DA96}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -42,6 +48,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{DE87F493-F1D0-488B-988C-16569884BBD2} = {14D8D712-4D11-4047-B9E9-864077256050}
 		{B45A6471-8AE6-4161-83BC-CCA1BC40F185} = {14D8D712-4D11-4047-B9E9-864077256050}
+		{0915F1F8-679A-4182-8481-51B954F0DA96} = {14D8D712-4D11-4047-B9E9-864077256050}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8BDEF1AC-B2E8-4F5E-B1A5-176421FCBA68}
