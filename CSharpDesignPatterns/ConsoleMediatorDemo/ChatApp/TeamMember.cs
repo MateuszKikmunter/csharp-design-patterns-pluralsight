@@ -27,5 +27,10 @@ namespace ConsoleMediatorDemo.ChatApp
         {
             Console.WriteLine($"from { from }: '{ message }'");
         }
+
+        public void SendTo<T>(string message) where T : TeamMember
+        {
+            _chatroom.SendTo<T>(Name, message);
+        }
     }
 }

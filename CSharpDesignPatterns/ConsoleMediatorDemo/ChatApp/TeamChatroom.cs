@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace ConsoleMediatorDemo.ChatApp
 {
@@ -23,6 +24,11 @@ namespace ConsoleMediatorDemo.ChatApp
             {
                 Register(member);
             }
+        }
+
+        public override void SendTo<T>(string from, string message)
+        {
+            _members.OfType<T>().ToList().ForEach(m => m.Receive(from, message));
         }
     }
 }
