@@ -6,6 +6,13 @@ namespace ConsoleMediatorDemo
     {
         static void Main(string[] args)
         {
+
+        }
+
+
+
+        private static void StructuralExample()
+        {
             var mediator = new ConcreteMediator();
             var c1 = mediator.CreateColleague<ConcreteColleague>();
             var c2 = mediator.CreateColleague<SecondConreteColleage>();
