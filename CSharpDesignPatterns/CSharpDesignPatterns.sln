@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleMediatorDemo", "Cons
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarkerPositions", "MarkerPositions\MarkerPositions.csproj", "{B45A6471-8AE6-4161-83BC-CCA1BC40F185}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatRDemo", "MediatRDemo\MediatRDemo.csproj", "{0915F1F8-679A-4182-8481-51B954F0DA96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediatRDemo", "MediatRDemo\MediatRDemo.csproj", "{0915F1F8-679A-4182-8481-51B954F0DA96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonPattern", "SingletonPattern\SingletonPattern.csproj", "{8C1162EC-02C0-42FB-BBF2-436963B6E899}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{0915F1F8-679A-4182-8481-51B954F0DA96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0915F1F8-679A-4182-8481-51B954F0DA96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0915F1F8-679A-4182-8481-51B954F0DA96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C1162EC-02C0-42FB-BBF2-436963B6E899}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C1162EC-02C0-42FB-BBF2-436963B6E899}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C1162EC-02C0-42FB-BBF2-436963B6E899}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C1162EC-02C0-42FB-BBF2-436963B6E899}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
