@@ -1,10 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using SingletonPattern.Utils;
 
 namespace SingletonPattern.NaiveImplementation
 {
-    public class Singleton
+    public sealed class Singleton
     {
+        private static Singleton? _instance;
+
+        public static Singleton Instance
+        {
+            get
+            {
+                Logger.Log("Instance called!");
+                return _instance ??= new Singleton();
+            }
+        }
+
+        private Singleton()
+        {
+            Logger.Log("Constructor called!");
+        }
     }
 }
