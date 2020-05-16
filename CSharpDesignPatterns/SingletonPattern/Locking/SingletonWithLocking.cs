@@ -11,7 +11,7 @@ namespace SingletonPattern.Locking
         {
             get
             {
-                Logger.Log("Calling instance!");
+                Logger.Log("Calling Instance!");
                 lock(_padlock) // this lock is used on every reference to Singleton
                 {
                     if(_instance == null)
@@ -25,7 +25,7 @@ namespace SingletonPattern.Locking
 
         private SingletonWithLocking()
         {
-            Logger.Log("Calling constructor!");
+            Logger.Log("Calling Constructor!");
         }
     }
 }
